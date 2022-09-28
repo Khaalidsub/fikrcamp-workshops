@@ -6,11 +6,11 @@
 // inferred
 // fetch within a function using this url
 
-// fethc within a function using this url and console log it
+// fetch within a function using this url and console log it
 
-// statically typed
+// explicitly typed
 // fetch within a function using this url
 
-// fethc within a function using this url and console log it
+// fetch within a function using this url and console log it
 
 // ASYNC AND AWAIT
