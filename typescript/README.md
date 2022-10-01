@@ -26,13 +26,14 @@ There is no need since vscode will understand the typescript has been installed 
 - primitive types
 - inferring types
 - objects
+- optional types
 - functions ( arguments and return types)
 - promises
 - classes (+inheritence)
 - types & interfaces
 - enums
 - generics
-- tscongif
+- tsconfig
 - a simple project using the express framework
 
 ## Hello World
@@ -59,3 +60,8 @@ This typescript config is a way of configuring how you want your typescript proj
 - you could enforce your arguments should always have types
 
 ## Further Reading
+
+- [TypeScript Tutorial for Beginners] https://www.youtube.com/watch?v=d56mG7DezGs
+- [Utility Types] https://www.w3schools.com/typescript/typescript_utility_types.php
+- [Type Casting] https://www.w3schools.com/typescript/typescript_casting.php
+- [React with Typescript] https://blog.logrocket.com/how-use-typescript-react-tutorial-examples/
