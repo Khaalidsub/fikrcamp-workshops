@@ -59,6 +59,29 @@ This typescript config is a way of configuring how you want your typescript proj
 - you could enforce your project to return a statically typed function
 - you could enforce your arguments should always have types
 
+## Supermarket API
+
+We will be making an API containing the following:
+
+- Products
+- Category
+
+We will initially implement the API with less types and start as follows:
+Product CRUD
+
+- Service
+- Route & controller
+  Category CRUD
+- Model
+- Service
+- Route & controller
+
+Next, we will be improving the project with types:
+
+- services using dtos (product we will be using class types, categories we will be using types)
+- controllers moving data with dtos
+- services using interfaces
+
 ## Further Reading
 
 - [TypeScript Tutorial for Beginners] https://www.youtube.com/watch?v=d56mG7DezGs
