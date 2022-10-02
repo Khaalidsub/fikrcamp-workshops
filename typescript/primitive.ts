@@ -1,12 +1,15 @@
-//statically typing
+//explicit typing
 // const and let
+let vegetableName: string;
+let vegetableCount: number;
+let isVegetable: boolean;
 
-//number
+vegetableName = "Eggplants";
 
-//string
-
+//implicit
 // inferring the type
+let onionName = "Spanish Onion";
 
-// number
+let countOnions = 10;
 
-// string
+countOnions = countOnions + 5;
