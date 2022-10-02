@@ -1,5 +1,27 @@
-import { Product } from "../models/product.model"
+import { randomUUID } from "crypto";
+import { Product } from "../models/product.model";
 
-const Products:Product[] = []
+export const Products: Product[] = [
+  { name: "Egyptian Flour", category: "Bakery", id: randomUUID() },
+  { name: "Doop", category: "Health & Beauty", id: randomUUID() },
+  { name: "Rani", category: "Beverage", id: randomUUID() },
+  { name: "Chicken", category: "Frozen Food", id: randomUUID() },
+  { name: "Fried Beef", category: "Frozen Food", id: randomUUID() },
+];
 
-const Categories = []
+export const Categories = [
+  {
+    name: "Bakery",
+  },
+
+  {
+    name: "Beverage",
+  },
+  {
+    name: "Frozen Food",
+  },
+
+  {
+    name: "Health & Beauty",
+  },
+];
