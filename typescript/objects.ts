@@ -1,28 +1,46 @@
-// statically mentioning the object type
-const pear: {
-  isAvailable: boolean;
+// explicit mentioning the object type
+//optional type
+const meat: {
   name: string;
-  count: number;
-  createdAt?: Date;
-  updatedAt?: Date;
+  id: string;
+  expiryDate: Date;
+  price: number;
+  exportedBy?: string;
 } = {
-  name: "pear",
-  count: 120,
-  isAvailable: true,
-  createdAt: new Date(),
+  id: "",
+  name: "chicken",
+  expiryDate: new Date(),
+  price: 15,
+  // exportedBy:""
+};
+meat.exportedBy = "dubai";
+
+const flour: {
+  id: string;
+  name: string;
+  price: number;
+  count: number;
+  isAvailable?: boolean;
+} = {
+  id: "",
+  name: "",
+  price: 15,
+  // isAvailable:true, how do we check
+  count: 15,
 };
 
+if (flour.count > 0) {
+  flour.isAvailable = true;
+}
+
+console.log(flour);
 // inferring the type
-let pickle = {
-  name: "lemon pickle",
-  count: 5,
-  isAvailable: true,
-  createdAt: new Date(),
-  updatedAt: new Date(),
-};
+const beverage = {
+  id: "super_bvg_rani_pineapple",
+  name: "Rani",
+  expiryDate: new Date(),
+  price: 10,
+}; //milk,water,fanta
 
-console.log("initila pear", pear);
-pear.count = pear.count - 1;
-pear.updatedAt = new Date();
-
-console.log("after pear", pear);
+// add new fields wont work for implicit types
+// beverage.exportedBy = "";

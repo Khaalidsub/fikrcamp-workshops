@@ -1,21 +1,13 @@
 // class without properties
-class Product {
-  constructor(public id: string, public name: string) {}
-}
-const onion = new Product("", "");
+class Product {}
 // class with private properties
-class SecretProduct {
+class ProductWithPrivateProperties {
   private id: string;
   private name: string;
-
-  constructor(id: string, name: string) {
+  constructor(name: string, id: string) {
     this.id = id;
     this.name = name;
   }
 }
 // class with inheritence (extends)
-export class VegetableProduct extends Product {
-  constructor(public id: string, public name: string, public expiryDate: Date) {
-    super(id, name);
-  }
-}
+class ExtendedProduct extends Product {}
